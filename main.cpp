@@ -10,7 +10,7 @@ int main()
     {
         std::getline(std::cin,commande);
         commandes = splitCommande(commande);
-        processCommande(commandes);
+        done=processCommande(commandes);
 
     }
     return 0;

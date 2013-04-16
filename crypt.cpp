@@ -22,7 +22,7 @@ std::string decrypt(int key,std::string message)
 {
     if(key != 0)
     {
-        message = crypt(26-key,message);
+        message = crypt(25-key,message);
     }
 
     else

@@ -5,7 +5,7 @@
 
 std::vector <std::string> splitCommande(std::string commande);
 
-void processCommande(std::vector<std::string> commande);
+bool processCommande(std::vector<std::string> commande);
 
 size_t stringToInt(std::string a);
 

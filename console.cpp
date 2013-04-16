@@ -25,8 +25,9 @@ std::vector<std::string> splitCommande(std::string commande)
     return commandes;
 }
 
-void processCommande(std::vector<std::string> commandes)
+bool processCommande(std::vector<std::string> commandes)
 {
+bool done;
     std::string subString;
     if (commandes[0]=="help")
     {
@@ -34,7 +35,8 @@ void processCommande(std::vector<std::string> commandes)
                   << "help : affiche ce menu" << std::endl
                   << "crypt cle ""message"" : crypte message selon le code Cesar avec la cle precisee" << std::endl
                   << "decrypt cle ""message"" : decrypte message selon le code Cesar avec la cle precisee" << std::endl
-                  <<"si vous ne connaissez pas la cle, inserez 0 a la place" << std::endl;
+                  <<"si vous ne connaissez pas la cle, inserez 0 a la place" << std::endl
+                  <<"exit : quitte ce programme" << std::endl;
     }
 
     else if (commandes[0]=="crypt")
@@ -59,5 +61,11 @@ void processCommande(std::vector<std::string> commandes)
         subString=decrypt(cle,subString);
     }
 
+    else if (commandes[0]=="exit")
+    {
+    done = 1;
+    }
+
     std::cout << subString << std::endl;
+    return done;
 }
