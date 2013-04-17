@@ -1,4 +1,4 @@
-crypto
+cryptox
 ======
 
 Un petit programme en C++ qui permet de crypter/décrypter un message en suivant le code César. 
