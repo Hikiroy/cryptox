@@ -5,7 +5,10 @@ int main()
     bool  done=0;
     std::string commande;
     std::vector<std::string> commandes;
-    std::cout << "    ---Bienvenue dans cryptox---" << std::endl << "Tapez help pour la liste des commandes"<<std::endl;
+
+    std::cout << "    ---Bienvenue dans cryptox---" << std::endl
+    << "Tapez help pour la liste des commandes"<<std::endl;
+
     while(!done)
     {
         std::getline(std::cin,commande);
@@ -13,5 +16,6 @@ int main()
         done=processCommande(commandes);
 
     }
+
     return 0;
 }
