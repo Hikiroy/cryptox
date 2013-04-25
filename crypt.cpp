@@ -1,9 +1,11 @@
 #include "include.h"
 
-std::string alphabet= "abcdefghijklmnopqrstuvwxyz";
+
 
 std::string crypt(int key,std::string message)
 {
+    std::string alphabet= "abcdefghijklmnopqrstuvwxyz";
+
     for(size_t i(0); i<message.size(); i++)
     {
         for(size_t ialpha(0); ialpha<25; ialpha++)
