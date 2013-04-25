@@ -1,4 +1,6 @@
 cryptox.layout
+cryptox.depend
 obj/*
 result.txt
 bin/*
+cryptox.layout.cbTemp
